@@ -1,0 +1,101 @@
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+header h1 a{
+   text-decoration: none;
+   font-weight: bold;
+   color: red;
+}
+header nav {
+    display: flex;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+    width: 500px;
+
+}
+header nav ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*Hero Starts*/
+
+.hero  { 
+   background-image: url("../assets/hero.jpg");  
+    
+}
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    
+}
+
+/*Hero Ends*/
+
+/*About Me Starts*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+
+}
+.about h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    margin: 10px;
+    text-align: right;
+    width: 20%;
+    border-right: 2px solid green;
+}
+.about p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 10px;
+    width: 70%;
+}
+
+
+
+/*Work Starts*/
+.work h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    margin: 10px;
+    text-align: right;
+    width: 20%;
+    border-right: 2px solid green;
+}
+/*Work Ends*/
+
+/* Contact Starts*/
+.contact h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    margin: 10px;
+    text-align: right;
+    width: 20%;
+    border-right: 2px solid green;
+}
+
+/*Contact Ends*/
