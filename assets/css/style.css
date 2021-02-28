@@ -68,16 +68,6 @@ header nav ul li a{
     font-size: 50px;
 
 }
-/*.profile-pic {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-image: url("../images/profilepic.jpeg")
-    
-} */
 
 /*Hero Ends*/
 
@@ -139,9 +129,17 @@ object section {
     width: 100%;
     border: solid black 2px;
     margin: 5px;
-    height: 150px;
+    height: 250px;
     background-image: url("../images/feature.jpg");
+    background-size: cover;
     align-items: flex-end;
+}
+.feature a {
+    background-color:#647279;
+    color:  #f3eee4;
+    padding: 2px;
+    margin: 0;
+
 }
 .work1, .work2, .work3, .work4 {
     display: flex;
@@ -150,7 +148,15 @@ object section {
     width: 50%;
     border: solid black 2px;
     margin: 5px;
-    height: 100px
+    height: 100px;
+    background-size: cover;
+}
+.work1 a, .work2 a, .work3 a, .work4 a {
+    background-color:#647279;
+    color:  #f3eee4;
+    padding: 2px;
+    margin: 0;
+    text-decoration: none;
 }
 .work1 {
     background-image: url("../images/work1.jpg");
@@ -199,3 +205,18 @@ object section {
      
  }
 /*Contact Ends*/
+
+footer {
+    background-color: #647279;
+}
+.profile-pic {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    margin: 20 px;
+    border-radius: 50%;
+    background-image: url("../images/profilepic.jpeg")
+    
+} 
