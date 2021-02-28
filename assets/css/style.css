@@ -1,15 +1,21 @@
 
+body {
+    background-color: #f3eee4;
+}
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    justify-content: space-between;
+    background-color:#647279;
+    height: 100px;
+    padding: 20px;
 }
 header h1 {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   background-color: green;
    padding: 10px;
+   font-family: 'Space Grotesk', sans-serif;;
 
 }
 header h1 a{
@@ -17,12 +23,12 @@ header h1 a{
    flex-wrap: wrap;
    text-decoration: none;
    font-weight: bold;
-   color: red;
+   color: #f3eee4;
+   padding: 10px;
 }
 header nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
 }
 header nav ul {
     display: flex;
@@ -36,24 +42,42 @@ header nav ul {
 header nav ul li a{
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
     margin: 5px;
     padding: 5px;
+    color: #f3eee4;
+
 }
 
 /*Hero Starts*/
-.hero-img {
-    height: 100vh;
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 400px;
     width: 100%;
     background-size: cover;
     background-image: url("../images/hero-bg.jpg");  
 }
-.hero h2 {
+.hero h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    margin: 10px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+
+}
+/*.profile-pic {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("../images/profilepic.jpeg")
     
-}
+} */
 
 /*Hero Ends*/
 
@@ -111,20 +135,36 @@ object section {
 }
 .feature {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     width: 100%;
     border: solid black 2px;
     margin: 5px;
     height: 150px;
+    background-image: url("../images/feature.jpg");
+    align-items: flex-end;
 }
 .work1, .work2, .work3, .work4 {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     width: 50%;
     border: solid black 2px;
     margin: 5px;
     height: 100px
 }
+.work1 {
+    background-image: url("../images/work1.jpg");
+}
+.work2 {
+    background-image: url("../images/work2.jpg");
+}
+.work3 {
+    background-image: url("../images/work3.jpg");
+}
+.work4 {
+    background-image: url("../images/work4.jpg");   
+    }
+
 
 /*Work Ends*/
 
