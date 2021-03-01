@@ -14,8 +14,6 @@ header h1 {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   padding: 10px;
-   font-family: 'Space Grotesk', sans-serif;;
 
 }
 header h1 a{
@@ -25,6 +23,8 @@ header h1 a{
    font-weight: bold;
    color: #f3eee4;
    padding: 10px;
+   font-family: 'Space Grotesk', sans-serif;;
+   font-size: 40px;
 }
 header nav {
     display: flex;
@@ -65,8 +65,7 @@ header nav ul li a{
     align-self: flex-end;
     margin: 10px 10px 0px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-
+    font-size: 70px;
 }
 
 /*Hero Ends*/
@@ -75,6 +74,7 @@ header nav ul li a{
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 200px;
 
@@ -87,14 +87,15 @@ header nav ul li a{
     margin: 10px;
     text-align: right;
     width: 20%;
-    border-right: 2px solid green;
+    border-right: 2px solid #4f99cc;
 }
 .about p {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
+    padding: 20px;
     margin: 10px;
     width: 70%;
+    border: solid 2px #647279;
 }
 
 
@@ -103,6 +104,7 @@ header nav ul li a{
 .work { 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .work h2 {
     display: flex;
@@ -112,12 +114,15 @@ header nav ul li a{
     margin: 10px;
     text-align: right;
     width: 20%;
-    border-right: 2px solid green;
+    border-right: 2px solid #4f99cc;
 }
 object {
     display: flex;
     flex-wrap: wrap;
-    width: 70%
+    padding: 20px;
+    margin: 20px;
+    width: 70%;
+    border: solid 2px #647279;
 }
 object section {
     display:flex;
@@ -127,7 +132,6 @@ object section {
     display: flex;
     flex-wrap: wrap;  
     width: 100%;
-    border: solid black 2px;
     margin: 5px;
     height: 250px;
     background-image: url("../images/feature.jpg");
@@ -146,7 +150,6 @@ object section {
     flex-wrap: wrap;
     align-items: flex-end;
     width: 50%;
-    border: solid black 2px;
     margin: 5px;
     height: 100px;
     background-size: cover;
@@ -178,6 +181,8 @@ object section {
 .contact {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 .contact h2 {
     display: flex;
@@ -187,14 +192,17 @@ object section {
     margin: 10px;
     text-align: right;
     width: 20%;
-    border-right: 2px solid green;
+    border-right: 2px solid #4f99cc;
 }
 
  address {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
+     margin: 20px;
+     padding: 20px;
      width: 70%;
+     border: solid 2px #647279;
  }
 
  address div {
@@ -207,15 +215,16 @@ object section {
 /*Contact Ends*/
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #647279;
 }
 .profile-pic {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 200px;
-    width: 200px;
-    margin: 20 px;
+    flex-wrap: wrap;   
+    height: 250px;
+    width: 250px;
+    margin: 20px;
     border-radius: 50%;
     background-image: url("../images/profilepic.jpeg")
     
