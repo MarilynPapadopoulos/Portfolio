@@ -1,12 +1,17 @@
 
+:root{
+    --light-color: #f0f0f1;
+    --dark-color: #647279;
+}
+
 body {
-    background-color: #f3eee4;
+    background-color: var(--light-color);
 }
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:#647279;
+    background-color: var(--dark-color);
     height: 100px;
     padding: 20px;
 }
@@ -21,7 +26,7 @@ header h1 a{
    flex-wrap: wrap;
    text-decoration: none;
    font-weight: bold;
-   color: #f3eee4;
+   color: var(--light-color);
    padding: 10px;
    font-family: 'Space Grotesk', sans-serif;;
    font-size: 40px;
@@ -44,7 +49,7 @@ header nav ul li a{
     flex-wrap: wrap;
     margin: 5px;
     padding: 5px;
-    color: #f3eee4;
+    color: var(--light-color);
 
 }
 
@@ -93,9 +98,9 @@ header nav ul li a{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     width: 70%;
-    border: solid 2px #647279;
+    border: solid 2px  var(--dark-color);
 }
 
 
@@ -122,7 +127,7 @@ object {
     padding: 20px;
     margin: 20px;
     width: 70%;
-    border: solid 2px #647279;
+    border: solid 2px  var(--dark-color);
 }
 object section {
     display:flex;
@@ -139,8 +144,8 @@ object section {
     align-items: flex-end;
 }
 .feature a {
-    background-color:#647279;
-    color:  #f3eee4;
+    background-color: var(--dark-color);
+    color:  var(--light-color);
     padding: 2px;
     margin: 0;
 
@@ -155,8 +160,8 @@ object section {
     background-size: cover;
 }
 .work1 a, .work2 a, .work3 a, .work4 a {
-    background-color:#647279;
-    color:  #f3eee4;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     padding: 2px;
     margin: 0;
     text-decoration: none;
@@ -192,7 +197,7 @@ object section {
     margin: 10px;
     text-align: right;
     width: 20%;
-    border-right: 2px solid #4f99cc;
+    border-right: 2px solid var(--dark-color);
 }
 
  address {
@@ -202,7 +207,7 @@ object section {
      margin: 20px;
      padding: 20px;
      width: 70%;
-     border: solid 2px #647279;
+     border: solid 2px var(--dark-color);
  }
 
  address div {
@@ -214,11 +219,21 @@ object section {
  }
 /*Contact Ends*/
 
+.bottom-banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
     background-color: #647279;
 }
+
 .profile-pic {
     display: flex;
     flex-wrap: wrap;   
