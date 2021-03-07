@@ -145,21 +145,19 @@ object section {
 }
 .feature {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    align-items: flex-end;  
     width: 100%;
-    margin: 5px;
     height: 250px;
+    margin: 5px;
+    padding: 2px;
     background-image: url("../images/feature.jpg");
     background-size: cover;
-    align-items: flex-end;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 30px; 
 }
-.feature a {
-    background-color: var(--dark-color);
-    color:  var(--light-color);
-    padding: 2px;
-    margin: 0;
 
-}
 .work1, .work2, .work3, .work4 {
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +166,9 @@ object section {
     margin: 5px;
     height: 100px;
     background-size: cover;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 30px; 
 }
 .work1 a, .work2 a, .work3 a, .work4 a {
     background-color: var(--dark-color);
@@ -256,7 +257,7 @@ footer {
 } 
 
 /*Media query for small computers*/
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1024px) {
 
     .about h2 {
         width: 80%;
