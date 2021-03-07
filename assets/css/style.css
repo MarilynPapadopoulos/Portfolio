@@ -137,6 +137,12 @@ object section {
     display:flex;
     width: 100%
 }
+.feature-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
 .feature {
     display: flex;
     flex-wrap: wrap;  
