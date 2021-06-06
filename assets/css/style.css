@@ -1,234 +1,104 @@
 
 :root{
-    --light-color: #f0f0f1;
-    --dark-color: #647279;
+    --light-color: #bbbbbf;
+    --dark-color: #2a3138;
+    --pink-color: #ff0066;
+    --text-color: grey;
 }
 
 body {
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
+}
+a:link {
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+a:hover {
+    color: var(--pink-color);
+}
+.wrapper {
+    padding: 1em;
+    display: grid;
+    border: 5px solid black;
+}
+/* Header */
+.container1 {
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-rows: auto;
+    border: 3px solid black;
+}
+nav {
+    display: grid;
+    grid-row: 1;
+    justify-items: center;
 }
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--dark-color);
-    height: 100px;
-    padding: 20px;
-    width: 100%;
-    margin: 10px;
+    display: grid;
 }
-header h1 {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-
-}
-header h1 a{
-   display: flex;
-   flex-wrap: wrap;
-   text-decoration: none;
-   font-weight: bold;
-   color: var(--light-color);
-   padding: 10px;
-   font-family: 'Space Grotesk', sans-serif;;
-   font-size: 40px;
-}
-header nav {
-    display: flex;
-    justify-content: flex-end;
-}
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    list-style: none;
-    width: 500px;
-
-}
-header nav ul li a{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
+h1, h2{
+    display: inline;
+    place-self: center;
     padding: 5px;
+}
+h1 {
+    filter: saturate(200%);
+    color: var(--pink-color);
+}
+h2 {
     color: var(--light-color);
-
 }
+/* Header Ends*/
 
-/*Hero Starts*/
-
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-image: url("../images/hero-bg.jpg"); 
-    margin: 10px; 
-    padding: 20px;
+/* Main Content*/
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    border: 3px solid black;
 }
-.hero h1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-end;
-    margin: 10px 10px 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+.section-heading {
+    display: inline;
+    justify-self: end;
+    align-self: start;
+    font-size: 2em;
+    color: var(--light-color);
 }
-
-/*Hero Ends*/
-
-/*About Me Starts*/
-
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 200px;
+    align-self: center;
+    border: 3px solid black;
+    color: var(--text-color);
+}
 
+section {
+    display: grid;
+    border: 3px solid black;  
 }
-.about h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 0px 10px;
-    margin: 10px;
-    text-align: right;
-    width: 20%;
-    border-right: 2px solid #4f99cc;
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 1em;
+    grid-auto-rows: minmax (100px, auto);
+    border: 3px solid black;
+    color: var(--text-color);
 }
-.about p {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
-    width: 70%;
-    border: solid 2px  var(--dark-color);
+.project-link {
+    display: grid;
 }
 
 
-
-/*Work Starts*/
-.work { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.work h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 0px 10px;
-    margin: 10px;
-    text-align: right;
-    width: 20%;
-    border-right: 2px solid #4f99cc;
-}
-object {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
-    width: 70%;
-    border: solid 2px  var(--dark-color);
-}
-object section {
-    display:flex;
-    width: 100%
-}
-.feature-wrapper{
-    display: flex;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    font-size: 30px; 
-}
-.feature {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;  
-    width: 100%;
-    height: 250px;
-    margin: 5px;
-    padding: 2px;
-    background-image: url("../images/feature.jpg");
-    background-size: cover;
-    color: var(--light-color);  
+/* Main Content Ends*/
+address {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 1em;
+    grid-auto-rows: auto;
+    border: 3px solid black;
 }
 
-.work1, .work2, .work3, .work4 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    width: 50%;
-    height: 100px;
-    margin: 5px;
-    background-size: cover;
-    text-decoration: none;
-    color: var(--light-color);
-    font-size: 30px; 
-}
-.work1 a, .work2 a, .work3 a, .work4 a {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    padding: 2px;
-    margin: 0;
-    text-decoration: none;
-}
-.work1 {
-    background-image: url("../images/work1.jpg");
-}
-.work2 {
-    background-image: url("../images/work2.jpg");
-}
-.work3 {
-    background-image: url("../images/work3.jpg");
-}
-.work4 {
-    background-image: url("../images/work4.jpg");   
-    }
 
-
-/*Work Ends*/
-
-/* Contact Starts*/
-.contact {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-}
-.contact h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 0px 10px;
-    margin: 10px;
-    text-align: right;
-    width: 20%;
-    border-right: 2px solid #4f99cc;
-}
-
- address {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     margin: 20px;
-     padding: 20px;
-     width: 70%;
-     border: solid 2px var(--dark-color);
- }
-
- address div {
-     display: flex;
-     flex-wrap:wrap;
-     margin: 10px;
-     padding: 10px;
-     
- }
-/*Contact Ends*/
 
 .bottom-banner {
     display: flex;
@@ -242,7 +112,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    background-color: #647279;
+    background-color: var(--dark-color);
 }
 
 .profile-pic {
